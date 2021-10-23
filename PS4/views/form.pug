@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1 ENTER YOUR CITY / COUNTRY / CONTINENT NAME HERE
+
+    h2 USE PROMISE
+    form(method='POST' action='/ps4/promise')
+        input(type='text' name='city')
+        input(type='submit')
+
+    h2 USE ASYNC AWAIT
+    form(method='POST' action='/ps4/await')
+        input(type='text' name='city')
+        input(type='submit')
+
+    h2 USE CALLBACK
+    form(method='POST' action='/ps4/callback')
+        input(type='text' name='city')
+        input(type='submit')

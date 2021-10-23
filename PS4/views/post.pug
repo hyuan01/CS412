@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    div(class='center')
+        h1 #{cityname}'s Weather Data
+        div
+                div Description: #{weatherdata}
+                div Temperature: #{Math.round(temperature - 273)} °C / #{Math.round((temperature - 273) * 9/5 + 32)} °F
+
+        form
+            input(type='button' value='back' onclick='history.back()')
