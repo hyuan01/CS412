@@ -1,0 +1,9 @@
+<i><p>Do weather stuff</p></i>
+<br/>
+<form (ngSubmit)="getPlaceWeather()">
+  Enter City/Country/Continent: <input name="query" [(ngModel)]="query" required minlength="1">
+  <button type="submit" [disabled]="!query">Run</button>
+</form>
+
+<app-list [weatherData]="weatherData" [query]="query"> </app-list>
+
