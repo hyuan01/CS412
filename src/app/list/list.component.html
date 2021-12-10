@@ -1,0 +1,8 @@
+
+
+<div *ngIf ="weatherData[0]" >
+  <h3>Weather Info For: {{query}}</h3>
+  <ul *ngFor="let data of weatherData; let index = index">
+    <li>{{data}}</li>
+  </ul>
+</div>
